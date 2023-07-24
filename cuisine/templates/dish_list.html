@@ -1,0 +1,12 @@
+<!-- kaz_national_cuisine/cuisine/templates/dish_list.html -->
+
+{% extends 'base.html' %}
+
+{% block content %}
+    <h2>Dishes</h2>
+    <ul>
+        {% for dish in dishes %}
+            <li><a href="{% url 'dish_detail' dish.pk %}">{{ dish.name }}</a></li>
+        {% endfor %}
+    </ul>
+{% endblock %}

@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<section class="dish-detail">
+  <h2 class="dish-name">{{ dish.name }}</h2>
+  <div class="dish-container">
+    <div class="dish-image">
+      <img src="{{ dish.image.url }}" alt="{{ dish.name }}">
+    </div>
+    <div class="dish-info">
+      <p class="dish-description">{{ dish.description }}</p>
+    </div>
+  </div>
+  <a href="{% url 'menu' %}" class="btn btn-back">Back to Menu</a>
+</section>
+{% endblock %}
+

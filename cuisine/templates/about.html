@@ -1,0 +1,41 @@
+<!-- kaz_national_cuisine/cuisine/templates/about.html -->
+
+{% extends 'base.html' %}
+{% load static %}
+
+
+
+{% block content %}
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-lg-6 mb-4">
+                <div class="about-image">
+                    <img src="{% static 'images/about.jpg' %}" alt="About Kazakh National Cuisine" class="img-fluid">
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="about-content">
+                    <h2 class="mb-4">About Kazakh National Cuisine</h2>
+                    <p class="about-text">
+                        Welcome to <strong>Kazakh National Cuisine</strong>, a website dedicated to exploring the rich flavors
+                        and traditions of Kazakh traditional dishes. Our mission is to introduce the world to
+                        the unique and delicious culinary heritage of Kazakhstan.
+                    </p>
+                    <p class="about-text">
+                        Kazakh cuisine reflects the nomadic lifestyle of the Kazakh people and the use of locally
+                        available ingredients. From hearty meat-based dishes like <em>Beshbarmak</em> to delicious dairy
+                        products like <em>kumis</em>, Kazakh cuisine has a lot to offer for food enthusiasts and travelers
+                        alike.
+                    </p>
+                    <p class="about-text">
+                        We hope you enjoy your culinary journey through Kazakh National Cuisine and discover the
+                        diverse and flavorful dishes that make up the essence of Kazakh food culture.
+                    </p>
+                    <div class="text-center">
+                        <a href="{% url 'menu' %}" class="btn btn-orange btn-lg mt-4">Explore Our Menu</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<section class="menu-hero">
+    <div class="menu-hero-content">
+      <h2 class="menu-hero-heading">Discover Our Menu</h2>
+      <p class="menu-hero-text">Explore our delicious dishes crafted with passion and care. From traditional favorites to modern creations, we have something for everyone.</p>
+    </div>
+</section>
+
+<div class="container">
+    <div class="row">
+        {% for dish in dishes %}
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img src="{{ dish.image.url }}" alt="{{ dish.name }}" class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title">{{ dish.name }}</h5>
+                  
+                    <a href="{% url 'dish_detail' dish.slug %}" class="btn btn-orange btn-block">View Details</a>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}
+
+
+
+

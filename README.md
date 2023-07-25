@@ -1,5 +1,7 @@
 # Kazakh National Cuisine Website
 
+## https://kazakhcuisine.onrender.com
+
 This is a web application for Kazakh National Cuisine, where users can explore traditional Kazakh dishes and recipes.
 
 ## Table of Contents
@@ -32,7 +34,7 @@ The Kazakh National Cuisine website is a project aimed at promoting the rich cul
 - JavaScript
 - Bootstrap
 - Gunicorn (WSGI server)
-- Heroku (Cloud platform for deployment)
+- Render (Cloud platform for deployment)
 
 ## Installation
 

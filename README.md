@@ -1,6 +1,6 @@
 # Kazakh National Cuisine Website
 
-## [https://kazakhcuisine.onrender.com](https://kazakhcuisine.vercel.app)
+## [https://kazakhcuisine.vercel.app](https://kazakhcuisine.vercel.app)
 
 This is a web application for Kazakh National Cuisine, where users can explore traditional Kazakh dishes and recipes.
 
